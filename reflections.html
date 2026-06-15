@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <title>随笔 | Zherun Li</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zherun Li 的个人随笔，记录技术思考、成长复盘与日常观察。">
+  <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/reflections.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/reflections-data.js" defer></script>
+  <script src="js/reflections.js" defer></script>
+</head>
+
+<body class="reflections-page">
+  <div class="menu-container"></div>
+
+  <main>
+    <header class="reflections-hero">
+      <div class="reflections-hero-image" role="img" aria-label="田野、天空与向远方延伸的水渠"></div>
+      <div class="reflections-hero-content">
+        <p class="reflections-kicker">个人随笔</p>
+        <h1>记录想明白的事，也保留还没想明白的问题。</h1>
+        <p>关于技术、成长与生活的完整笔记。默认展示全部内容，也可以按栏目和标签慢慢阅读。</p>
+      </div>
+    </header>
+
+    <div class="reflections-shell">
+      <aside class="reflections-sidebar" aria-label="随笔筛选">
+        <div class="filter-group">
+          <h2>栏目</h2>
+          <div id="category-filters" class="category-filters"></div>
+        </div>
+
+        <div class="filter-group">
+          <h2>标签</h2>
+          <div id="tag-filters" class="tag-filters"></div>
+        </div>
+
+        <button id="clear-filters" class="clear-filters" type="button">清除筛选</button>
+      </aside>
+
+      <section class="reflections-content" aria-labelledby="reflections-heading">
+        <div class="reflections-heading-row">
+          <div>
+            <h2 id="reflections-heading">全部随笔</h2>
+            <p id="filter-description">按发布时间从新到旧排列</p>
+          </div>
+          <p id="reflection-count" class="reflection-count" aria-live="polite"></p>
+        </div>
+
+        <div id="reflection-list" class="reflection-list"></div>
+
+        <div id="reflection-empty" class="reflection-empty" hidden>
+          <h3>这里暂时没有匹配的随笔</h3>
+          <p>试试选择其他栏目，或者清除当前标签。</p>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
